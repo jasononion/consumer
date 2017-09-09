@@ -2,10 +2,7 @@ package com.services.pojo.csedemo.model;
 
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import javax.validation.constraints.*;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.CsePojoCodegen", date = "2017-09-09T02:48:48.008Z")
 
 public class Person   {
   @JsonProperty("name")

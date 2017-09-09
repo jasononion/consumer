@@ -1,4 +1,4 @@
-FROM java:8-jdk
+FROM openjdk:8-jre-alpine
 
 WORKDIR /home/apps/
 ADD target/consumer-1.0.0.jar .
