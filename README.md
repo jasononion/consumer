@@ -1,5 +1,3 @@
-# Swagger generated server
-
 CSE-Java Pojo Consumer
 
 
