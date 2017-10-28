@@ -21,9 +21,8 @@ public class PojoConsumer {
 
     private static void consumerDemo() throws InterruptedException {
         while (true) {
-            System.out.println("Add: " + demo.add(3, 6));
+            System.out.println("Cal: " + demo.cal(12));
             System.out.println("Sayhi: " + demo.sayHi("Tom"));
-            System.out.println("SaySomething: " + demo.saySomething("Something", new Person().name("Jim")));
             Thread.sleep(3000);
         }
     }

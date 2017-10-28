@@ -32,6 +32,23 @@ paths:
             format: "int32"
       x-contentType: "application/json"
       x-accepts: "application/json"
+  /cal/{input}:
+    get:
+      operationId: "cal"
+      parameters:
+      - name: "input"
+        in: "path"
+        required: true
+        type: "integer"
+        format: "int32"
+      responses:
+        200:
+          description: "cal"
+          schema:
+            type: "integer"
+            format: "int32"
+      x-contentType: "application/json"
+      x-accepts: "application/json"
   /sayhello/{name}:
     post:
       operationId: "sayHello"
