@@ -32,21 +32,26 @@ paths:
             format: "int32"
       x-contentType: "application/json"
       x-accepts: "application/json"
-  /cal/{input}:
+  /bmi:
     get:
-      operationId: "cal"
+      operationId: "bmi"
       parameters:
-      - name: "input"
-        in: "path"
+      - name: "weight"
+        in: "query"
         required: true
         type: "integer"
         format: "int32"
+      - name: "height"
+        in: "query"
+        required: true
+        type: "number"
+        format: "double"
       responses:
         200:
           description: "cal"
           schema:
-            type: "integer"
-            format: "int32"
+            type: "number"
+            format: "double"
       x-contentType: "application/json"
       x-accepts: "application/json"
   /sayhello/{name}:

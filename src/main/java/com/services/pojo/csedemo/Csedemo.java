@@ -6,7 +6,7 @@ public interface Csedemo {
 
     Integer add(Integer a, Integer b);
 
-    Integer cal(Integer input);
+    double bmi(Integer weight, double height);
 
     String sayHei(String name);
 
