@@ -5,11 +5,19 @@ service_description:
 cse:
   service:
     registry:
-      address: https://100.125.0.198:30100
+      address: https://cse.cn-north-1.myhwclouds.com:443
+      instance:
+        watch: false
   config:
     client:
-      serverUri: https://100.125.0.198:30103
+      serverUri: https://cse.cn-north-1.myhwclouds.com:443
+      refreshMode: 1
+      refresh_interval: 5000
   handler:
     chain:
       Consumer:
         default: bizkeeper-provider,loadbalance
+  credentials:
+    accessKey: TY8HSBXSAEO4FNQYDJNQ
+    secretKey: 43cdsj4ceju8fbM3SfDfrMtg3Ksq4YG1LTZpxfCT
+    akskCustomCipher: default
