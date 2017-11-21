@@ -26,7 +26,7 @@ public class PojoConsumer {
         while (true) {
 //            System.out.println("Cal: " + demo.bmi(80, 1.75));
             System.out.println("Sayhi: " + cloud.sayHi("Tom"));
-            Thread.sleep(3000);
+            Thread.sleep(300);
         }
     }
 }
